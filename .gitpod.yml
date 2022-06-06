@@ -1,0 +1,10 @@
+image: k33g/sat-cli:0.0.0
+
+vscode:
+  extensions:
+    - golang.go
+    - pkief.material-icon-theme
+    - rust-lang.rust
+    - bungcip.better-toml
+    - aaron-bond.better-comments
+    - grain-lang.vscode-grain
