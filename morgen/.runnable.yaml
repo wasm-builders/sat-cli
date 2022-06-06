@@ -1,0 +1,6 @@
+name: morgen
+namespace: default
+lang: rust
+version: ""
+apiVersion: 0.15.1
+fqfnUri: ""

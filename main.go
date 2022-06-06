@@ -12,19 +12,19 @@ import (
 func main() {
 
 	argsWithoutCaller := os.Args[1:]
-	wasmModulePath := argsWithoutCaller[0]
+	wasmModulePath := "plugins/" + argsWithoutCaller[0] + ".wasm"
 	wasmModuleParameters := argsWithoutCaller[1:]
+
 
 	wasmModuleConfig, _ := sat.ConfigFromRunnableArg(wasmModulePath)
 	
 	satFunction, _ := sat.New(wasmModuleConfig, nil)
 
-	
 	result, err := satFunction.Exec([]byte(strings.Join(wasmModuleParameters, ";")))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println("😃 " + string(result.Output))
+	fmt.Println(string(result.Output))
 
 }

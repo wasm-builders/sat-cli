@@ -1,4 +1,4 @@
-module wasm-builders/sat-next-gen/wfunc
+module wasm-builders/sat-cli
 
 go 1.18
 
