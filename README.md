@@ -17,9 +17,7 @@ impl Runnable for Hello {
         Ok(String::from(format!("👋 Hello world {} 🌍", in_string)).as_bytes().to_vec())
     }
 }
-
 ```
-
 
 ```rust
 impl Runnable for Morgen {
@@ -29,7 +27,6 @@ impl Runnable for Morgen {
         Ok(String::from(format!("👋 Hallo Welt {} 🌍", in_string)).as_bytes().to_vec())
     }
 }
-
 ```
 
 > build the 2 Runnables and copy the wasm files to a `plugins` directory
